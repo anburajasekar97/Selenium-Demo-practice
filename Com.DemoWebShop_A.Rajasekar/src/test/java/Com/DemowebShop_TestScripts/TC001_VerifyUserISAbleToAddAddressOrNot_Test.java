@@ -32,6 +32,7 @@ public class TC001_VerifyUserISAbleToAddAddressOrNot_Test extends BaseTest{
 		 newaddressespage.getPostaltextfield().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 6));
 		 newaddressespage.getPhonenumbertextfield().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 7));
 		 newaddressespage.getSavebutton().click();
+		 System.out.println("add address is successful");
 		 Thread.sleep(3000);
 		 webdriverutility.WebPageScreenShot(driver);
 		 
